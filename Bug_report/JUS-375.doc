@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#JUS-375] При отправке письма банку происходит бесконечная загрузка (Таня) </title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://include1310.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [JUS-375]&nbsp;<a href="https://include1310.atlassian.net/browse/JUS-375">При отправке письма банку происходит бесконечная загрузка (Таня) </a>
+            <span class="subText">
+               Created: 21/Mar/24                   &nbsp;Updated: 22/Mar/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Ревью</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://include1310.atlassian.net/secure/BrowseProject.jspa?id=10007">JUST_DO_IT_SPRINT</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                                        <a title="Web"
+                href="https://include1310.atlassian.net/issues/?jql=project%3D10007%20AND%20%22component%22%3D10000%20ORDER%20BY%20priority%20ASC"
+            >Web</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3"
+                id="word_reporter_712020:1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3"
+                href="https://include1310.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3">
+                    Peter_PEN
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11206-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Environment:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p><font color="#ff991f"><b>Шаги воспроизведения:</b></font></p>
+
+<ol>
+	<li>Зайти на сайт <a href="https://idemo.bspb.ru/welcome" title="smart-link" class="external-link" rel="nofollow noreferrer">https://idemo.bspb.ru/welcome</a></li>
+	<li>В поле “логин” ввести “demo”, в поле пароль ввести “demo”</li>
+	<li>Нажать на кнопку “Войти”</li>
+	<li>Ввести в поле “0000”</li>
+	<li>Нажать “Войти”</li>
+	<li>Выбрать аккаунт “Королёва Ольга“ и войти</li>
+	<li>Нажать на иконку “Переписка с банком”</li>
+	<li>Нажать кнопку “Новое сообщение”</li>
+	<li>В выпадающем списке выбрать “Вопрос по экроу“</li>
+	<li>В тексте сообщения ввести рандомный текст</li>
+	<li>Загрузить рандомный файл и отправить</li>
+</ol>
+
+
+<p><font color="#ff991f"><b>Ожидаемый результат:</b></font></p>
+
+<p>Письмо отправляется</p>
+
+<p><font color="#ff991f"><b>Фактический результат</b></font></p>
+
+<p>При отправке письма банку происходит бесконечная загрузка </p>
+
+<h2><a name="Environment"></a>Environment</h2>
+
+<p>Windows 11, Google Chrome Версия 120.0.6099.71 (Официальная сборка), (64 бит)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://include1310.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Снимок экрана 2024-03-21 214006.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://include1310.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Снимок экрана 2024-03-21 214051.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://include1310.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Снимок экрана 2024-03-22 104403.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-11206-value" class="value" bgcolor="#ffffff" width="80%">Спринт, длиною в курс 2</td>
+            </tr>
+            </table>
+
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10358"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3"
+                id="word_commented_712020:1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3"
+                href="https://include1310.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A1deb54d7-aa0f-470b-a2d3-a5b98c4d5ea3">
+                    Peter_PEN
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">21/Mar/24</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10358"><td bgcolor="#ffffff">
+            <p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/11011" height="591" width="763" style="border: 0px solid black" /></span></p>
+
+<p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/11010" height="557" width="809" style="border: 0px solid black" /></span></p>
+        </td></tr>
+            </table>
+Generated at Fri Mar 22 12:03:04 UTC 2024 by Peter_PEN using Jira 1001.0.0-SNAPSHOT#100248-rev:9aad01a33a3dae75a5b6aedf98c77d2cbd2f865d.
+
+</body>
+</html>
