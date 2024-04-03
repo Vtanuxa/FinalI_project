@@ -1,0 +1,2 @@
+npm install -g newman
+newman run Petstore.postman_collection.json -e petstore.postman_environment.json
