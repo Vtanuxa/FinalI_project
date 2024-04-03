@@ -1,0 +1,237 @@
+{
+	"id": "13a16140-6f1b-4f1d-83d2-1ae1fa56108a",
+	"name": "Petstore",
+	"timestamp": "2024-04-03T13:31:56.654Z",
+	"collection_id": "31789902-0f90d27c-db10-40e4-b24f-91af670dd304",
+	"folder_id": 0,
+	"environment_id": "31789902-bc8edb12-71e6-45a1-b396-3ab4c90b170b",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-04-03T13:31:54.483Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "b097b49a-72aa-41dd-bd2d-32c4bbab9b24",
+			"name": "createUsersWithListInput",
+			"url": "https://petstore.swagger.io/v2/user/createWithList",
+			"time": 609,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 400ms": false,
+				"Тест содержит Content-Type": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Тест содержит Content-Type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				609
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 400ms": false,
+					"Тест содержит Content-Type": true
+				}
+			]
+		},
+		{
+			"id": "a0fdc73e-5248-4201-bb85-b5c7ef746404",
+			"name": "getUserByName",
+			"url": "https://petstore.swagger.io/v2/user/user1",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 400ms": true,
+				"Тест содержит Content-Type": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест содержит Content-Type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 400ms": true,
+					"Тест содержит Content-Type": true
+				}
+			]
+		},
+		{
+			"id": "fa5e712c-aabc-467d-b5f3-12f6795820a6",
+			"name": "Updated user",
+			"url": "https://petstore.swagger.io/v2/user/user2",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 400ms": true,
+				"Тест содержит Content-Type": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест содержит Content-Type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				126
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 400ms": true,
+					"Тест содержит Content-Type": true
+				}
+			]
+		},
+		{
+			"id": "d12f91cc-bfa4-4c05-8c07-ecd046c1f7aa",
+			"name": "logs users into the system",
+			"url": "https://petstore.swagger.io/v2/user/login?username=user1&password=9999",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 400ms": true,
+				"Тест содержит Content-Type": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест содержит Content-Type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				128
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 400ms": true,
+					"Тест содержит Content-Type": true
+				}
+			]
+		},
+		{
+			"id": "4a38672e-943e-459e-a521-e08b1d63faf8",
+			"name": "create Users",
+			"url": "https://petstore.swagger.io/v2/user",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 400ms": true,
+				"Тест содержит Content-Type": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Тест содержит Content-Type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				373
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 400ms": true,
+					"Тест содержит Content-Type": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1360,
+	"collection": {
+		"requests": [
+			{
+				"id": "b097b49a-72aa-41dd-bd2d-32c4bbab9b24",
+				"method": "POST"
+			},
+			{
+				"id": "a0fdc73e-5248-4201-bb85-b5c7ef746404",
+				"method": "GET"
+			},
+			{
+				"id": "fa5e712c-aabc-467d-b5f3-12f6795820a6",
+				"method": "PUT"
+			},
+			{
+				"id": "d12f91cc-bfa4-4c05-8c07-ecd046c1f7aa",
+				"method": "GET"
+			},
+			{
+				"id": "4a38672e-943e-459e-a521-e08b1d63faf8",
+				"method": "POST"
+			}
+		]
+	}
+}
