@@ -10,35 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check script
-      uses: actions/checkout@v2
-
+    - uses: actions/checkout@v3
     - name: Run contact script
       run: |
         echo contacts.sh
         
-    tanya_check:
+  tanya_check:
     runs-on: ubuntu-latest
     needs:
      - build
     steps:
-
-      - uses: actions/checkout@v3
-      - name: run find_dir_file.sh
-        run: sh find_dir_file.sh
+    - uses: actions/checkout@v3
+    - name: run find_dir_file.sh
+      run: sh find_dir_file.sh
         
-       run Postman:
+  Postman:
     runs-on: ubuntu-latest
     needs:
      - build
      - tanya_check
     steps:
-
-      - uses: actions/checkout@v3
-      - name: run Postman
-        run: sh tanya_scr.sh
-        
-   - name: Run contact script
+    - uses: actions/checkout@v3
+    - name: run Postman
       run: Petstore.postman_test_run.json
-        
 
