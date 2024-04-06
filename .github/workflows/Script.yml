@@ -32,14 +32,14 @@ jobs:
      - My_script2
     steps:
     - uses: actions/checkout@v3
-    - name: create dir
+    - name: Create dir
       run: |
        mkdir TestArtifacts
 
     - name: Install Node.js
-      uses: actions/checkout@v3
+      uses: actions/setup-node@v3
       with:
-       node-version: '16'
+       node-version: '16.x'
        
     - name: Install Newman
       run: npm install -g newman
