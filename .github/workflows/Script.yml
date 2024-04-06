@@ -22,7 +22,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: run find_dir_file.sh
-      run: sh find_dir_file.sh
+      run: |
+       sh find_dir_file.sh
         
   Postman:
     runs-on: ubuntu-latest
