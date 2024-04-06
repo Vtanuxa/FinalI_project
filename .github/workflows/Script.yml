@@ -36,7 +36,7 @@ jobs:
       run: |
        mkdir TestArtifacts
 
-    - name: Install Node.js
+    - name: Install Node
       uses: actions/setup-node@v3
       with:
        node-version: '16.x'
@@ -47,7 +47,7 @@ jobs:
     - name: Run Postman tests    
       run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter-htmlextra-export Action_Doc/report.html
 
-    - name: Publish Report
+    - name: Output the results
       uses: actions/upload-artifact@v3
       with:
          name: Reports
