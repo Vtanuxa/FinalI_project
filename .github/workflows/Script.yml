@@ -1,0 +1,22 @@
+name: My CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check script
+      uses: actions/checkout@v2
+
+    - name: Run custom scripts
+      run: |
+        echo "Running custom script 1"
+        Bash_script/contacts.sh
+
+        echo "Running custom script 2"
+        Bash_script/find_dir_file.sh
