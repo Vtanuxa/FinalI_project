@@ -41,5 +41,4 @@ jobs:
     - name: Install Newman
       run: npm iinstall -g newman
     - name: Run Postman tests    
-      run: |
-       newman run Petstore.postman_test_run.json
+      run: newman run Petstore.postman_test_run.json
