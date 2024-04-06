@@ -32,13 +32,26 @@ jobs:
      - My_script2
     steps:
     - uses: actions/checkout@v3
-    - name: run Postman
+    - name: create dir
+      run: |
+       mkdir Action_Doc
 
-    - name: Set up Node.js
-    - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/checkout@v3
       with:
-       node-version: '14'
+       node-version: '20'
+       
     - name: Install Newman
       run: npm iinstall -g newman
+      
     - name: Run Postman tests    
-      run: newman run Petstore.postman_test_run.json
+      run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter-htmlextra-export Action_Doc/report.html
+
+    - name: Publish Report
+      uses: actions/apload-artifact@v3
+      with:
+         name: Reports
+         path: Action_Doc
+
+
+    
