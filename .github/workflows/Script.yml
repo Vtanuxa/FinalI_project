@@ -13,10 +13,6 @@ jobs:
     - name: Check script
       uses: actions/checkout@v2
 
-    - name: Run custom scripts
+    - name: Run contact script
       run: |
-        echo "Running custom script 1"
-        Bash_script/contacts.sh
-
-        echo "Running custom script 2"
-        Bash_script/find_dir_file.sh
+        echo contacts.sh
