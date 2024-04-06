@@ -49,7 +49,7 @@ jobs:
       
       
     - name: Run Postman tests    
-      run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter-htmlextra-export Action_Doc/report.html
+      run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter-htmlextra-export SampleArtifact/report.html
 
     - name: Output the results
       uses: actions/upload-artifact@v3
