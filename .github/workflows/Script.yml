@@ -42,7 +42,7 @@ jobs:
        node-version: '20'
        
     - name: Install Newman
-      run: npm iinstall -g newman
+      run: npm install -g newman
       
     - name: Run Postman tests    
       run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter-htmlextra-export Action_Doc/report.html
