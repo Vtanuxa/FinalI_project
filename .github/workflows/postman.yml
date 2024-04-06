@@ -3,13 +3,13 @@ name: Postman CI/CD
 on:
   push:
     branches:
-      - Tanya
+      - main
 
 jobs:
   postman_test:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Run Postman Collection
+      - name: Run Postman Collection
         run: |
-          newman run /c/test/project/FinalI_project/Postman/Petstore.postman_test_run.json
+          newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json
