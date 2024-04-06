@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Run contact script
       run: |
         echo contacts.sh
@@ -20,7 +20,7 @@ jobs:
     needs:
      - My_script1
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: run find_dir_file.sh
       run: |
        echo find_dir_file.sh
@@ -31,13 +31,13 @@ jobs:
      - My_script1
      - My_script2
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Create dir
       run: |
        mkdir TestArtifact
 
     - name: Install Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
        node-version: '20'
        
