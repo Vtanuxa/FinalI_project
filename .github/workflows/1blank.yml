@@ -1,0 +1,28 @@
+name: My scripts Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  My_script1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run contact script
+      run: |
+        echo contacts.sh
+        
+  My_script2:
+    runs-on: ubuntu-latest
+    needs:
+     - My_script1
+    steps:
+    - uses: actions/checkout@v4
+    - name: run find_dir_file.sh
+      run: |
+       echo find_dir_file.sh
+        
+
