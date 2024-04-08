@@ -54,7 +54,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
          name: Reports
-         path: /c/test/project/TestArtifacts
+         path: /c/test/project/FinalI_project/Postman
 
 
     
