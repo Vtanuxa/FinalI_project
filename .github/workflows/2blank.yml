@@ -25,4 +25,3 @@ jobs:
             
     - name: Run Postman tests    
       run: newman run Postman/Petstore.postman_collection.json -e Postman/petstore.postman_environment.json -r htmlextra --reporter- htmlextra-export SampleArtifact/report.html
-    
