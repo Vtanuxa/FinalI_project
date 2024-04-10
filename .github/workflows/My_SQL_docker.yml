@@ -3,7 +3,7 @@ name: Run MySQL Container
 on: [push]
 
 jobs:
-  build:
+  MySQL_Container:
     runs-on: ubuntu-latest
 
     steps:
