@@ -1,4 +1,4 @@
-CREATE TABLE Autorization (
+    CREATE TABLE Autorization (
 id INT PRIMARY KEY AUTO_INCREMENT,
 Login VARCHAR(10),
 Password VARCHAR(10)
