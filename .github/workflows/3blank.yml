@@ -16,3 +16,5 @@ jobs:
 
     - name: Verify MySQL container is running
       run: docker ps
+    - name: Connect to MySQL server
+      run: docker exec -it My_SQL mysql -u root -p
